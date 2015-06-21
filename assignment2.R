@@ -22,7 +22,7 @@ cacheSolve <- function(x, ...)
 		message("getting cached data")
 		return(i)
 	}	
-	message("caching the data") #displays message when data is being cached, ie only in the first run.
+	message("caching the data") #displays message when data is being cached ie. only during the first run.
 	data <- x$get()
 	i <- solve(data, ...)
 	x$setmatrix(i)
